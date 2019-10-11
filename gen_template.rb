@@ -71,6 +71,7 @@ def gen_template(
         disk_interface: 'virtio-scsi',
         qemuargs: [
           ['-m', '1024'],
+          ['-display', 'gtk'],
         ],
       ),
       builder(

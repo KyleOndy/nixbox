@@ -6,7 +6,7 @@
         "echo http://{{ .HTTPIP }}:{{ .HTTPPort}} > .packer_http<enter>",
         "mkdir -m 0700 .ssh<enter>",
         "curl $(cat .packer_http)/install_rsa.pub > .ssh/authorized_keys<enter>",
-        "systemctl start sshd<enter>"
+        "sudo systemctl start sshd<enter>"
       ],
       "http_directory": "scripts",
       "iso_checksum_type": "sha256",
@@ -15,8 +15,8 @@
       "ssh_port": 22,
       "ssh_username": "root",
       "type": "virtualbox-iso",
-      "iso_url": "https://releases.nixos.org/nixos/19.03/nixos-19.03.173009.2516c454c35/nixos-minimal-19.03.173009.2516c454c35-x86_64-linux.iso",
-      "iso_checksum": "9dc1c904ef1a0b6d2afbd795ed694d78a98b8d0fc0bc62226db4f2b23d9f125b",
+      "iso_url": "https://releases.nixos.org/nixos/19.09/nixos-19.09.741.dbad7c7d59f/nixos-minimal-19.09.741.dbad7c7d59f-x86_64-linux.iso",
+      "iso_checksum": "3379a53f998ca7bdc9b775a06d81275df7bd2c002e7d0fa0a3036cad9c3b7aca",
       "guest_additions_mode": "disable",
       "guest_os_type": "Linux_64",
       "disk_size": 52000,
@@ -35,7 +35,7 @@
         "echo http://{{ .HTTPIP }}:{{ .HTTPPort}} > .packer_http<enter>",
         "mkdir -m 0700 .ssh<enter>",
         "curl $(cat .packer_http)/install_rsa.pub > .ssh/authorized_keys<enter>",
-        "systemctl start sshd<enter>"
+        "sudo systemctl start sshd<enter>"
       ],
       "http_directory": "scripts",
       "iso_checksum_type": "sha256",
@@ -44,8 +44,8 @@
       "ssh_port": 22,
       "ssh_username": "root",
       "type": "qemu",
-      "iso_url": "https://releases.nixos.org/nixos/19.03/nixos-19.03.173009.2516c454c35/nixos-minimal-19.03.173009.2516c454c35-x86_64-linux.iso",
-      "iso_checksum": "9dc1c904ef1a0b6d2afbd795ed694d78a98b8d0fc0bc62226db4f2b23d9f125b",
+      "iso_url": "https://releases.nixos.org/nixos/19.09/nixos-19.09.741.dbad7c7d59f/nixos-minimal-19.09.741.dbad7c7d59f-x86_64-linux.iso",
+      "iso_checksum": "3379a53f998ca7bdc9b775a06d81275df7bd2c002e7d0fa0a3036cad9c3b7aca",
       "disk_interface": "virtio-scsi",
       "qemuargs": [
         [
@@ -64,7 +64,7 @@
         "echo http://{{ .HTTPIP }}:{{ .HTTPPort}} > .packer_http<enter>",
         "mkdir -m 0700 .ssh<enter>",
         "curl $(cat .packer_http)/install_rsa.pub > .ssh/authorized_keys<enter>",
-        "systemctl start sshd<enter>"
+        "sudo systemctl start sshd<enter>"
       ],
       "http_directory": "scripts",
       "iso_checksum_type": "sha256",
@@ -73,8 +73,8 @@
       "ssh_port": 22,
       "ssh_username": "root",
       "type": "vmware-iso",
-      "iso_url": "https://releases.nixos.org/nixos/19.03/nixos-19.03.173009.2516c454c35/nixos-minimal-19.03.173009.2516c454c35-x86_64-linux.iso",
-      "iso_checksum": "9dc1c904ef1a0b6d2afbd795ed694d78a98b8d0fc0bc62226db4f2b23d9f125b",
+      "iso_url": "https://releases.nixos.org/nixos/19.09/nixos-19.09.741.dbad7c7d59f/nixos-minimal-19.09.741.dbad7c7d59f-x86_64-linux.iso",
+      "iso_checksum": "3379a53f998ca7bdc9b775a06d81275df7bd2c002e7d0fa0a3036cad9c3b7aca",
       "memory": 1024,
       "disk_size": 62000,
       "guest_os_type": "Linux"

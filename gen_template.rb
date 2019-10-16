@@ -70,8 +70,10 @@ def gen_template(
         iso_url: iso_url,
         iso_checksum: iso_sha256,
         disk_interface: 'virtio-scsi',
+        headless: 'true',
+        cpus: 2,
         qemuargs: [
-          ['-m', '1024'],
+          ['-m', '2048'],
         ],
       ),
       builder(

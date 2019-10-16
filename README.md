@@ -1,3 +1,9 @@
+This fork of [nixbox](https://github.com/nix-community/nixbox) is a single
+commit ahead of the `master` branch to patch the project to better incorporate
+into my workflow.
+
+----
+
 NixOS boxes for Vagrant
 =======================
 

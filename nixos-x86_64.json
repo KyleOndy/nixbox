@@ -52,6 +52,7 @@
       "iso_url": "https://releases.nixos.org/nixos/19.09/nixos-19.09.741.dbad7c7d59f/nixos-minimal-19.09.741.dbad7c7d59f-x86_64-linux.iso",
       "iso_checksum": "3379a53f998ca7bdc9b775a06d81275df7bd2c002e7d0fa0a3036cad9c3b7aca",
       "disk_interface": "virtio-scsi",
+      "headless": "true",
       "qemuargs": [
         [
           "-m",
